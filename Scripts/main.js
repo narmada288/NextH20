@@ -1,4 +1,4 @@
-var margin = {top: 10, right: 30, bottom: 30, left: 60},
+var margin = {top: 10, right: 30, bottom: 30, left: 30},
     width = 760 - margin.left - margin.right,
     height = 400 - margin.top - margin.bottom;
 
@@ -19,10 +19,10 @@ function(d){
 
 function(data){
 
-    var x = d3.scaleTime()
+    var x = d3.time.scale()
     .domain(d3.extent(data,function(d){
         return d.date;}))
-        .range([ 0, 118 ]);
+        .range([ 0, width ]);
     svg.append("g")
       .attr("transform", "translate(0," + height + ")")
       .call(d3.axisBottom(x));
