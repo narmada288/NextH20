@@ -19,7 +19,7 @@ var xScale = d3.scale.linear()
 //Creates the yScale
 var y0 = d3.scale.ordinal()
   .rangeBands([height, 0], 0.2)
-  .domain(["NW Plains W","NW Plains E","NW Slopes N","NW Slopes S","N Tablelands N","CW Plains S","CW Plains N","CW Slopes N","CW Slopes S","C Tablelands N","C Tablelands S","Riverina W","Riverina E","SW Slopes N","SW Slopes S"]);
+  .domain(["SW Slopes S","SW Slopes N","Riverina E","Riverina W","C Tablelands S","C Tablelands N","CW Slopes S","CW Slopes N","CW Plains N","CW Plains S","N Tablelands N","NW Slopes S","NW Slopes N","NW Plains E","NW Plains W"]);
 
 //Defines the y axis styles
 var yAxis = d3.svg.axis()
