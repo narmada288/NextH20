@@ -35,12 +35,14 @@ var xAxis = d3.svg.axis()
   .ticks(numTicks(width)); 
 
 //Loads the data
-d3.csv("././NSWCropRainfall.csv", ready);
+d3.csv("././NSWCropRainfall.csv", function(d){
+  return { year2015: d3.year2015, year2018: d3.year2018, category: d3.CropDistrict }
+} );
 
 function ready(err, data) {
 
   if (err) throw "error loading data";
-  console.log("Sorry, Failed to load data. Try again!");
+    console.log("Sorry, Failed to load data. Try again!");
 
   //FORMAT data
   data.forEach(function(d) {
