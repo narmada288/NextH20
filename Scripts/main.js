@@ -12,7 +12,7 @@ var svg = d3.select("#my_dataviz")
           "translate(" + margin.left + "," + margin.top + ")");
 
 // Read the data
-d3.csv("https://github.com/narmada288/NextH20/blob/master/Scripts/QLDRainFall.csv",
+d3.csv("../Scripts/QLDRainFall.csv",
 function(d){
     return { date : d3.timeParse("%Y")(d.Year), value : d.Rainfall }
   },
