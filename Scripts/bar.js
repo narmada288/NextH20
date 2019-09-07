@@ -1,9 +1,9 @@
-var margin = {top: 20, right: 10, bottom: 30, left: 20},
+var margin = {top: 20, right: 20, bottom: 30, left: 40},
     width = 960 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
 
 var x0 = d3.scale.ordinal()
-    .rangeRoundBands([0, width], .5);
+    .rangeRoundBands([0, width], .05);
 
 var x1 = d3.scale.ordinal();
 
