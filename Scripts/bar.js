@@ -22,7 +22,7 @@ var yAxis = d3.svg.axis()
     .orient("left")
     .tickFormat(d3.format(".2s"));
 
-var scodes = ['nsw', 'qld'];
+var scodes = ['nsw', 'qld', 'wa', 'sa', 'vic'];
 
 scodes.forEach(function(d){
     loadGraph(d);
