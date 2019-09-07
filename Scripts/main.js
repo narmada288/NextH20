@@ -3,7 +3,7 @@ var margin = {top: 10, right: 50, bottom: 20, left: 50};
 var widther = window.outerWidth;
 
 var width = widther - margin.left - margin.right,
-    height = 400 - margin.top - margin.bottom;
+    height = 600 - margin.top - margin.bottom;
 
 //Appends the svg to the chart-container div
 var svg = d3.select(".g-chart").append("svg")
