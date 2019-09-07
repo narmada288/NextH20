@@ -138,7 +138,7 @@ function ready(err, data) {
     var newMargin = {top: 10, right: 80, bottom: 20, left: 50};
 
     //Get the width of the window
-    var w = d3.select(".g-chart").node().clientWidth;
+    var w = parseInt(d3.select(".g-chart").style("width"), 10);
     console.log("resized", w);
 
     //Change the width of the svg
