@@ -22,7 +22,7 @@ function(data){
     var x = d3.scaleTime()
     .domain(d3.extent(data,function(d){
         return d.date;}))
-        .range([ 0, width ]);
+        .range([ 0, 118 ]);
     svg.append("g")
       .attr("transform", "translate(0," + height + ")")
       .call(d3.axisBottom(x));
