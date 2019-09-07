@@ -1,9 +1,9 @@
-var margin = {top: 20, right: 20, bottom: 30, left: 40},
+var margin = {top: 20, right: 10, bottom: 30, left: 20},
     width = 960 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
 
 var x0 = d3.scale.ordinal()
-    .rangeRoundBands([0, width], .1);
+    .rangeRoundBands([0, width], .5);
 
 var x1 = d3.scale.ordinal();
 
@@ -11,7 +11,7 @@ var y = d3.scale.linear()
     .range([height, 0]);
 
 var color = d3.scale.ordinal()
-    .range(["#98abc5", "#8a89a6"]);
+    .range(["#407ccf", "#b1b0d4"]);
 
 var xAxis = d3.svg.axis()
     .scale(x0)
@@ -54,7 +54,7 @@ d3.csv("././NSWCropRainfall.csv", function(error, data) {
       .attr("y", 6)
       .attr("dy", ".71em")
       .style("text-anchor", "end")
-      .text("Population");
+      .text("RainFall (mm)");
 
   var state = svg.selectAll(".state")
       .data(data)
