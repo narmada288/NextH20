@@ -19,8 +19,8 @@
     display: none;
   }
 
-  #nswId #qldId #vicId #saId #waId{
-    font-size: 8px;
+  #czise{
+    font-size: 8px !important;
   }
 
   .logo{
