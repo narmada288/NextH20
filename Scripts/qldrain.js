@@ -19,7 +19,7 @@ function(d){
 
 function(data){
 
-    var x = d3.time.scale()
+    var x = d3.scaleTime()
     .domain(d3.extent(data,function(d){
         return d.date;}))
         .range([ 0, width ]);
