@@ -95,7 +95,7 @@ function loadGraph(d){
         .style("fill", color);
 
     legend.append("text")
-        .attr("x", width - 24)
+        .attr("x", width - 36)
         .attr("y", 9)
         .attr("dy", ".35em")
         .style("text-anchor", "end")
