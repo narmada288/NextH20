@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Explore water for future</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <link rel="stylesheet" href="./Resources/css/index.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Navbar Component -->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand font-weight-bold" href="index.html"><img src="./Resources/Images/water.png" alt="blue ciricle" class="img-fluid logo"> Next H20</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav navbar-center mr-auto font-weight-bold">
+                <li class="nav-item">
+                    <a class="nav-link mx-5" href="index.html">Home</a>
+                </li>
+                <li class="nav-item mx-5 active">
+                    <a class="nav-link text-primary" href="bar.html">Charts <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item mx-5">
+                    <a class="nav-link" href="recycled.html">What can you do?</a>
+                </li>
+                <li class="nav-item disabled mx-5">
+                    <a class="nav-link" href="#">Queensland Annual Rainfall</a>
+                </li>
+            </ul>
+            </div>
+        </nav>
+        <br><br><br><br>
+        <div class="col jumbotron jumbotron-fluid mt-1 px-2">
+            <h2 class="font-italic font-weight-light text-center">"QLD Annual Rainfall Data from 1900 to 2016."</h2>
+        </div>
+    <!-- Container -->
+        <div class="container">
+        <!-- Graphs section -->
+            
+            <!-- QLD Annual Rainfall -->
+            <div class="row mt-5">
+                <div class="col">
+                    <h2 class="text-center display-4">Queensland Annual Rainfall Data</h2>
+                    <p>The below is a visual representation of the annual rainfall recorded for Queensland state, which suggests that the dips are too low compared to the highs.</p>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col align-self-center">
+                    <!-- First card goes here -->
+                    <div id="my_dataviz">
+                    </div>
+                    <hr>
+                </div>
+            </div> <!--End of image reasons section row-->
+
+        </div> <!--End of Container-->
+
+        <p class="mx-1">The queensland annual rainfall data plotted from 1900 to 2016 is all inconsistent with a lot of dips after the highs. It is important for everyone to contribute to do thier part in restoring this balance. <br>Considering the importance of water and its benefits , we all should be aware of its sources and the different conservation schemes currently available in market. To read more, click <a href="recycled.html">here</a>.</p>
+
+    <!-- Footer -->
+    <footer class="text-center pt-2">&copy; GovHack 2019 Team: Soloviz Project: Next H20</footer>
+
+    <!--D3 JavaScript files-->
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script type="text/JavaScript" src="./Scripts/qldrain.js"></script>
+
+    <!-- Bootstrap's JavaScript Files -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+    </body>
+</html>
