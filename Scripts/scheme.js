@@ -1,11 +1,11 @@
 d3.csv("././recycledSchemes.csv",
 function(d){
-    return { sName : d.SchemeName, pName : d.Provider }
+    return { value : d.Provider }
 },
 function (data){
     var x= d3.select("#schemeId")
     .append("option")
-    .attr("value", function(data){return data.sName;})
+    .attr("value", function(d){return d.value;})
     .text(function(d){
-    return data.pName;})
+    return d.value;})
 })
